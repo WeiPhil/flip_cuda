@@ -50,7 +50,7 @@
 
 #pragma once
 
-#include "sharedflip.h"
+#include "common/sharedflip.h"
 #include "cudaTensor.cuh"
 
 namespace FLIP

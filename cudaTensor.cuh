@@ -62,7 +62,7 @@
 #include "device_launch_parameters.h"
 
 #define USING_CUDA
-#include "sharedflip.h"
+#include "common/sharedflip.h"
 #include "cudaKernels.cuh"
 
 namespace FLIP

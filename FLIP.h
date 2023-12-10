@@ -54,12 +54,12 @@
 #include "device_launch_parameters.h"
 
 #define USING_CUDA
-#include "sharedflip.h"
+#include "common/sharedflip.h"
 
 #include "cudaImage.cuh"
-#include "mapMagma.h"
-#include "mapViridis.h"
+#include "common/mapMagma.h"
+#include "common/mapViridis.h"
 
-#include "commandline.h"
-#include "filename.h"
-#include "pooling.h"
+#include "common/commandline.h"
+#include "common/filename.h"
+#include "common/pooling.h"
