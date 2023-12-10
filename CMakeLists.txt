@@ -33,9 +33,9 @@
 project(flip-cuda LANGUAGES CXX CUDA)
 
 if(FLIP_LIBRARY)
-  add_library(${PROJECT_NAME} common/FLIP.cpp)
+  add_library(${PROJECT_NAME} common/FLIP.cpp common/stbi_wrapper.cpp common/tinyexr_wrapper.cpp)
 else()
-  add_executable(${PROJECT_NAME} common/FLIP.cpp)
+  add_executable(${PROJECT_NAME} common/FLIP.cpp common/stbi_wrapper.cpp common/tinyexr_wrapper.cpp)
 endif()
 
 target_include_directories(${PROJECT_NAME}
