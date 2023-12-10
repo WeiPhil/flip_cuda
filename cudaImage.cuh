@@ -358,7 +358,7 @@ namespace FLIP
     };
 
     template <>
-    bool image<float>::exrSave(const std::string& fileName)
+    inline bool image<float>::exrSave(const std::string& fileName)
     {
         this->synchronizeHost();
 

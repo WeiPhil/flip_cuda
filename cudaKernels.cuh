@@ -58,12 +58,11 @@
 
 namespace FLIP
 {
-    __constant__ struct
-    {
+    constexpr struct {
         float gqc = 0.7f;
         float gpc = 0.4f;
         float gpt = 0.95f;
-        float gw = 0.082f;
+        float gw  = 0.082f;
         float gqf = 0.5f;
     } DeviceFLIPConstants;
 
