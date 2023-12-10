@@ -43,6 +43,9 @@ target_include_directories(${PROJECT_NAME}
   ${CMAKE_CURRENT_LIST_DIR}
   ${CMAKE_CURRENT_LIST_DIR}/common
 )
+
+target_compile_definitions(flip-cuda PUBLIC TINYEXR_USE_MINIZ=0 TINYEXR_USE_STB_ZLIB=1)
+
 set_source_files_properties(common/FLIP.cpp PROPERTIES LANGUAGE CUDA)
 set_property(TARGET ${PROJECT_NAME} PROPERTY CUDA_ARCHITECTURES OFF)
 install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
